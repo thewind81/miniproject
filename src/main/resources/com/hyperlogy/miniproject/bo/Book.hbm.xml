@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.hyperlogy.miniproject.bo.Book" table="TBL_BOOK">
+        <id name="id" type="long">
+            <column name="BOOK_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="BOOK_NAME" length="255" not-null="true" />
+        </property>
+        <property name="price" type="long">
+            <column name="BOOK_PRICE" precision="18" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

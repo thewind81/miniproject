@@ -43,8 +43,8 @@
         <property name="transactionManager" ref="transactionManager"/>
         <property name="transactionAttributes">
             <props>
-                <prop key="get*">timeout_600,readonly</prop>
-                <prop key="list*">timeout_600,readonly</prop>
+                <prop key="get*">timeout_600,readOnly</prop>
+                <prop key="list*">timeout_600,readOnly</prop>
                 <prop key="do*">timeout_600,-java.lang.Throwable,+com.hyperlogy.miniproject.UnrollbackException</prop>
             </props>
         </property>

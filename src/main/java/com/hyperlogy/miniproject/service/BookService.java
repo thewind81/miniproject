@@ -11,7 +11,7 @@ public interface BookService {
 
     public Book get(Book bo);
 
-    public void doSave(Book bo);
+    public void doInsert(Book bo);
 
     public void doUpdate(Book bo);
 

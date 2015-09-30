@@ -25,5 +25,8 @@
         <module name="miniproject" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="miniproject" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

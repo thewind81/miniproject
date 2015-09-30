@@ -22,7 +22,7 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public void doSave(Book bo) {
+    public void doInsert(Book bo) {
         bookDao.save(bo);
     }
 
